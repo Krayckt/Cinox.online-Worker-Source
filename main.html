@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <title>Cinox</title>
 
+    <meta name="description" content="Cinox.online is currently under maintenance for an unspecified amount of time. We are not related to the piracy site Kinox.">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cinox">
+    <meta property="og:description" content="Cinox.online is currently under maintenance for an unspecified amount of time. We are not related to the piracy site Kinox.">
+    <meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1280px-Tux.svg.png">
+    <meta property="og:url" content="https://cinox.online">
+
+    <style>
+        :root {
+            color-scheme: light dark;
+
+            --bg: #e6e6ea;
+            --card-bg: #f4f4f7;
+            --card-shadow: rgba(0, 0, 0, 0.1);
+            --heading: #2c3e50;
+            --text: #008f5a;
+            --footer-color: #a87400;
+            --footer-size: 0.9rem;
+            --footer-padding: 20px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1c1c1f;
+                --card-bg: #2b2b30;
+                --card-shadow: rgba(0, 0, 0, 0.5);
+                --heading: #e6edf5;
+                --text: #02ffa2;
+                --footer-color: #f2b00d;
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body { margin: 0; }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            min-height: 100dvh;
+            padding: 20px 20px env(safe-area-inset-bottom);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: clamp(20px, 6vw, 40px);
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px var(--card-shadow);
+        }
+
+        .maintenance-img {
+            width: clamp(100px, 30vw, 160px);
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: clamp(1.5rem, 5vw, 2rem);
+            color: var(--heading);
+            text-wrap: balance;
+        }
+
+        p {
+            line-height: 1.6;
+            color: var(--text);
+            text-wrap: pretty;
+            overflow-wrap: break-word;
+        }
+
+        footer {
+            padding: var(--footer-padding) 0;
+            font-size: var(--footer-size);
+            color: var(--footer-color);
+            text-wrap: balance;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <img class="maintenance-img"
+                 src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1280px-Tux.svg.png"
+                 alt="Maintenance icon">
+            <h1>Under Maintenance</h1>
+            <p>This website is currently undergoing scheduled maintenance. It will be offline for an unspecified amount of time while we improve our system.</p>
+            <p>We apologize for the inconvenience and appreciate your patience.</p>
+        </div>
+    </main>
+
+    <footer>We are not related to the piracy site Kinox or any other illegal activities.</footer>
+</body>
+</html>
